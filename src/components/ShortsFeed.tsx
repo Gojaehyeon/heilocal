@@ -225,7 +225,7 @@ export default function ShortsFeed({ shops, shopLikes, userLocation, selectedSho
 
     const container = containerRef.current
     const containerHeight = container ? container.clientHeight : 500
-    const threshold = containerHeight * 0.15 // 25% → 15%로 감소 (더 높은 감도)
+    const threshold = containerHeight * 0.08 // 모바일: 화면 높이의 8%만 드래그하면 넘어감
 
     const endY = e.changedTouches[0].clientY
     const diff = startY.current - endY
