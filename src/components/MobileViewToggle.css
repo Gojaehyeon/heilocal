@@ -56,6 +56,7 @@
   flex-shrink: 0;
   transition: color 0.2s ease;
   color: inherit;
+  transform: translateY(5px); /* 아이콘 5px 아래로 오프셋 */
 }
 
 .toggle-button.active .toggle-icon {
@@ -67,6 +68,7 @@
   letter-spacing: 0.2px;
   line-height: 1.2;
   white-space: nowrap;
+  transform: translateY(5px); /* 라벨 5px 아래로 오프셋 */
 }
 
 /* 데스크톱에서는 숨김 */
