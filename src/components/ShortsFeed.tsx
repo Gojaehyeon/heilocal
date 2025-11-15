@@ -148,7 +148,7 @@ export default function ShortsFeed({ shops, shopLikes, userLocation, selectedSho
     if (!container) return
 
     const containerHeight = container.clientHeight
-    const THRESHOLD = containerHeight * 0.45 // 화면 높이의 45% 이상 끌어야 넘어감
+    const THRESHOLD = containerHeight * 0.25 // 화면 높이의 25% 이상 끌어야 넘어감 (45% → 25%)
     const WHEEL_SENSITIVITY = 0.3 // 휠 민감도 (0.3 = 느리게)
     let resetTimer: number
     let isTransitioning = false
@@ -225,7 +225,7 @@ export default function ShortsFeed({ shops, shopLikes, userLocation, selectedSho
 
     const container = containerRef.current
     const containerHeight = container ? container.clientHeight : 500
-    const threshold = containerHeight * 0.45
+    const threshold = containerHeight * 0.25 // 45% → 25%로 감소
 
     const endY = e.changedTouches[0].clientY
     const diff = startY.current - endY
