@@ -83,7 +83,7 @@
 /* 모바일 */
 @media (max-width: 768px) {
   .location-button {
-    bottom: calc(84px + env(safe-area-inset-bottom)); /* 하단 탭바 위에 배치 (4px 위로) */
+    bottom: calc(80px + env(safe-area-inset-bottom)); /* 하단 탭바 위에 배치 */
     right: 16px; /* 우측 하단 */
     top: auto;
     width: 56px; /* 40px * 1.4 */
@@ -96,7 +96,7 @@
   }
 
   .map-logo {
-    bottom: calc(94px + env(safe-area-inset-bottom)); /* 4px 위로 (90px → 94px) */
+    bottom: calc(90px + env(safe-area-inset-bottom)); /* 20px 하강 (100px - 20px) */
     left: 16px; /* 좌측 하단 */
     right: auto;
     top: auto;

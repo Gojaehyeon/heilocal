@@ -10,8 +10,9 @@
   background: #FFFFFF;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1px 0;
-  padding-bottom: max(4px, env(safe-area-inset-bottom));
-  bottom: 2px; /* 탭바를 4px 위로 (기존 -2px에서 +4px) */
+  padding-bottom: max(10px, env(safe-area-inset-bottom)); /* 라벨이 잘리지 않도록 여백 증가 */
+  bottom: -2px; /* 탭바를 아래로 오프셋 */
+  overflow: visible; /* 텍스트가 잘리지 않도록 */
 
   display: flex;
   justify-content: space-around;
@@ -35,7 +36,7 @@
   border-radius: 0;
   transition: color 0.2s ease;
   position: relative;
-  overflow: hidden;
+  overflow: visible; /* 텍스트가 잘리지 않도록 */
   min-width: 60px;
   flex: 1;
   /* 터치 하이라이트 제거 */
